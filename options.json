@@ -1,0 +1,59 @@
+[
+	{
+        "OptionName": "ELBSubnets",
+        "Namespace": "aws:ec2:vpc",
+        "Value": "subnet-e3b9e38b"
+    },
+    {
+        "OptionName": "Subnets",
+        "ResourceName": "AWSEBAutoScalingGroup",
+        "Namespace": "aws:ec2:vpc",
+        "Value": "subnet-e3b9e38b"
+    },
+	{
+        "Namespace": "aws:elasticbeanstalk:application:environment",
+        "OptionName": "NODE_ENV",
+        "Value": "development"
+    },
+    {   
+        "OptionName": "IamInstanceProfile",
+        "ResourceName": "AWSEBAutoScalingLaunchConfiguration",
+        "Namespace": "aws:autoscaling:launchconfiguration",
+        "Value": "aws-elasticbeanstalk-ec2-role"
+    },
+    {
+        "OptionName": "EC2KeyName",
+        "ResourceName": "AWSEBAutoScalingLaunchConfiguration",
+        "Namespace": "aws:autoscaling:launchconfiguration",
+        "Value": "tguo"
+    },
+    {
+        "OptionName": "SecurityGroups",
+        "ResourceName": "AWSEBAutoScalingLaunchConfiguration",
+        "Namespace": "aws:autoscaling:launchconfiguration",
+        "Value": "sg-86f454ed"
+    },
+	{
+        "OptionName": "AssociatePublicIpAddress",
+        "ResourceName": "AWSEBAutoScalingLaunchConfiguration",
+        "Namespace": "aws:ec2:vpc",
+        "Value": "false"
+    },
+	{
+        "OptionName": "ELBScheme",
+        "Namespace": "aws:ec2:vpc",
+        "Value": "internal"
+    },
+    {
+        "OptionName": "VPCId",
+        "ResourceName": "AWSEBLoadBalancerSecurityGroup",
+        "Namespace": "aws:ec2:vpc",
+        "Value": "vpc-e2b83b8a"
+    },
+    {
+        "OptionName": "EnvironmentType",
+        "Namespace": "aws:elasticbeanstalk:environment",
+        "Value": "LoadBalanced"
+    }
+]
+
